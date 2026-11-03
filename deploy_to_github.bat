@@ -1,5 +1,5 @@
 @echo off
-chcp 65001 >nul
+cls
 echo ========================================================
 echo   Master Knowledge Base BCPS 2026 - GitHub Publisher
 echo   Akun GitHub : robbydaryodi
@@ -7,15 +7,16 @@ echo   BGTK Provinsi Sumatera Barat - Kemendikdasmen
 echo ========================================================
 echo.
 
-set /p REPO_NAME="Masukkan nama repositori GitHub [default: knowledge]: "
-if "%REPO_NAME%"=="" set REPO_NAME=knowledge
+set REPO_NAME=knowledge
+set /p USER_INPUT="Masukkan nama repositori GitHub [default: knowledge]: "
+if not "%USER_INPUT%"=="" set REPO_NAME=%USER_INPUT%
 
 echo.
 echo [*] Memperbarui basis data portal site/data.json...
 python scripts\update_site_data.py
 
 echo.
-echo [1/4] Menginisialisasi Git Repositori Tunggal...
+echo [1/4] Memeriksa Git Repositori...
 if not exist .git (
     git init
     git branch -M main
@@ -24,7 +25,7 @@ if not exist .git (
 echo.
 echo [2/4] Menambahkan seluruh berkas master knowledge...
 git add .
-git commit -m "feat: publish master knowledge base bcps 2026 (ledger, docs, portal)"
+git commit -m "feat: publish master knowledge base bcps 2026 (ledger, docs, portal)" 2>nul
 
 echo.
 echo [3/4] Menghubungkan remote GitHub https://github.com/robbydaryodi/%REPO_NAME%.git ...
@@ -37,7 +38,7 @@ git push -u origin main
 
 echo.
 echo ========================================================
-echo   PUSH SELESAI!
+echo   PROSES PUSH SELESAI!
 echo ========================================================
 echo.
 echo LANGKAH PENGAKTIFAN GITHUB PAGES (Hanya 1 Kali):
@@ -47,7 +48,7 @@ echo    Pilih: [GitHub Actions]
 echo 3. Selesai! Workflow deploy-pages.yml akan otomatis mempublikasikan portal.
 echo.
 echo Portal Publik Anda akan aktif di:
-echo 👉 https://robbydaryodi.github.io/%REPO_NAME%/
+echo    https://robbydaryodi.github.io/%REPO_NAME%/
 echo ========================================================
 echo.
 pause
