@@ -1,5 +1,5 @@
 # Panduan Pendampingan 19 Dinas Pendidikan Kab/Kota & Provinsi
-_Diperbarui: 2 November 2026 · Balai Guru dan Tenaga Kependidikan Provinsi Sumatera Barat_
+_Diperbarui: 3 November 2026 · Balai Guru dan Tenaga Kependidikan Provinsi Sumatera Barat_
 
 > **Cara membaca label**
 > 🟢 **T1 Dasar hukum**: tercantum dalam dokumen resmi bernomor (rujukan di akhir baris)
@@ -10,38 +10,38 @@ _Diperbarui: 2 November 2026 · Balai Guru dan Tenaga Kependidikan Provinsi Suma
 
 ---
 
-## 1. Status Jadwal Kritis Dinas Pendidikan Saat Ini (2 November 2026)
-1. ⛔ **Pengusulan Calon UKPJ**: **RESMI DITUTUP** per 30 Oktober 2026. Penegasan pusat: *Tidak ada perpanjangan waktu pengusulan susulan*. Daerah yang terlambat diarahkan mengikuti periode ujikom selanjutnya. _(🟡 C-0035)_
-2. ⚡ **Pengusulan Calon Peserta UKKJ**: **SEDANG BERJALAN s.d 3 November 2026 (Pukul 23.59 WIB)**. Dinas wajib segera menuntaskan klik kirim usulan pengawas eksisting di SIMPKB/SIMTENDIK sebelum tengah malam besok. _(🟢 C-0004, 🟡 C-0036)_
-3. ⚡ **Pendaftaran & Unggah Berkas Calon UKPJ**: **SEDANG BERJALAN s.d 4 November 2026**. Dinas bertugas mengawal dan memandu peserta yang sudah diusulkan agar menyelesaikan unggah dokumen. _(🟢 C-0005, 🟡 C-0036)_
-4. 🟢 **Pendaftaran & Unggah Berkas Calon UKKJ**: **4 – 9 November 2026**. Peserta pengawas sekolah mengunggah SK jenjang terakhir, SKP, dan dokumen portofolio. _(🟢 C-0006)_
-5. 🟢 **Plotting TUK & Pengawas Ruang**: **18 – 22 November 2026**. Dinas menyiapkan ruang ujian berkapasitas maksimal 30 peserta dan menetapkan pengawas dari unsur ASN non-guru/non-PS. _(🟢 C-0009, C-0023)_
+## 1. Status Jadwal Kritis Dinas Pendidikan Hari Ini (3 November 2026)
+1. 🚨 **Pengusulan Calon Peserta UKKJ Pengawas**: **BERAKHIR HARI INI, 3 NOVEMBER 2026 PUKUL 23.59 WIB**.
+   - Admin dinas wajib memastikan 2 hal telah tuntas: (1) mencentang/memilih kandidat pada menu sasaran, dan (2) mengunggah Surat Usulan Resmi Dinas bertanda tangan pimpinan sebelum klik tombol "Kirim Usulan". _(🟢 C-0004, 🟡 C-0041)_
+2. ⚡ **Pendaftaran & Unggah Berkas Calon UKPJ**: **BERAKHIR BESOK, 4 NOVEMBER 2026**.
+   - Dinas wajib mengingatkan seluruh guru/KS yang telah diusulkan agar menyelesaikan pengunggahan berkas sebelum akun pendaftaran ditutup sistem. _(🟢 C-0005)_
+3. 🟢 **Pendaftaran & Unggah Berkas Calon UKKJ**: **4 – 9 November 2026**.
+   - Peserta pengawas sekolah yang sukses diusulkan dinas akan mulai mengunggah SK jenjang terakhir dan SKP mulai besok. _(🟢 C-0006)_
+4. 🟢 **Plotting TUK & Pengawas Ruang**: **18 – 22 November 2026**.
+   - Dinas menyiapkan TUK berkapasitas maksimal 30 peserta per ruang dan menugaskan ASN non-guru/non-PS sebagai pengawas ruang. _(🟢 C-0009, C-0023)_
 
 ---
 
-## 2. Arahan Kunci & Troubleshooting untuk 19 Dinas (T2)
+## 2. Troubleshooting & Masalah yang Sering Dialami Dinas di Hari Terakhir
 
-### A. Alokasi Formasi UKPJ vs UKKJ (Aturan Kuota Tunggal)
-- 🟡 Kuota lowongan pengawas bersifat *zero-sum*. Jika dinas mengusulkan UKPJ hingga menghabiskan kuota formasi, maka sisa kuota lowongan menjadi 0 (nol) dan calon UKKJ tidak akan muncul di sistem.
-- 🟡 Dinas yang masih memiliki kuota lowongan Pengawas Muda/Madya diimbau memprioritaskan usulan UKKJ pengawas eksisting sebelum masa usulan ditutup 3 November besok. _(Helpdesk Pengawas & Rosdianica; C-0024)_
+### A. Calon Peserta UKKJ Mengeluh "Tidak Muncul Undangan di Akunnya"
+- 🟡 **Penyebab Utama**: Dinas baru mengunggah surat usulan tetapi **belum menandai/memilih nama kandidat** di menu sasaran peserta pada SIMPKB.
+- 🟡 **Solusi**: Masuk ke menu sasaran peserta, centang nama pengawas yang bersangkutan, lalu pastikan statusnya berubah menjadi diusulkan. _(Helpdesk Pengawas; C-0041)_
 
-### B. Solusi Guru Madya yang Diusulkan ke Pengawas Muda
-- 🟡 Guru Madya yang tidak memiliki formasi Pengawas Madya di daerahnya dapat diakomodir ke Pengawas Muda dengan syarat melampirkan **Surat Pernyataan tidak menuntut diangkat ke jenjang Madya** untuk pengangkatan pertamanya. _(Rosdianica KSPSTK; C-0033)_
+### B. Pengawas Golongan III/d Tidak Muncul Data Potensinya di Sistem
+- 🟡 **Penyebab**: Yang bersangkutan baru memiliki SK Kenaikan Pangkat III/d reguler, namun belum memiliki **SK Kenaikan Jenjang Jabatan Fungsional (Ahli Muda)**.
+- 🟡 **Aturan Pusat**: Sistem UKKJ membaca SK Jenjang Jabatan Terakhir, bukan semata-mata pangkat ruang. _(Helpdesk Pengawas; C-0040)_
 
-### C. Dokumen yang Diunggah Tidak Perlu Dilegalisir Ulang
-- 🟡 Banyak calon peserta menanyakan ke dinas mengenai legalisir berkas. Sampaikan bahwa scan berwarna dokumen asli yang telah bertanda tangan dan berstempel (atau barcode TTE sah) **tidak perlu dilegalisir ulang**, sehingga tidak membebani guru di masa pendaftaran yang sempit. _(Helpdesk Pengawas; C-0037)_
+### C. Guru Madya Mendaftar Pengawas Muda
+- 🟡 Ingatkan kembali bahwa Guru Madya yang mengisi kuota Pengawas Muda wajib mengunggah **Surat Pernyataan Tidak Menuntut Jenjang Madya** untuk pengangkatan pertamanya agar tidak ditolak saat masa verval 10–14 November nanti. _(Rosdianica KSPSTK; C-0033)_
 
-### D. Penjelasan Resmi Mengapa Banyak Guru Tidak Masuk Sasaran Sistem
-Jika dinas mempertanyakan mengapa guru senior / mantan KS di daerahnya tidak muncul dalam daftar sasaran usulan, jelaskan 5 kriteria resmi cutoff Ditjen GTK:
-1. Ketidaksinkronan data Dapodik dengan SIASN BKN.
-2. Nomenklatur jabatan di SIASN belum sesuai regulasi.
-3. Jabatan KS terbaca sebagai jabatan struktural di SIASN.
-4. Belum memenuhi syarat minimal per cutoff Dapodik September 2026.
-5. Duplikasi PTK ID akun SIMPKB.
-*(Calon bersangkutan dapat diikutsertakan pada periode selanjutnya setelah data Dapodik dan SIASN disinkronkan; C-0032)*.
+### D. Scan Asli Tidak Butuh Legalisir
+- 🟡 Pastikan calon pendaftar UKPJ tidak panik mencari legalisir di sisa waktu 1 hari ini. Dokumen asli berwarna bertanda tangan/stempel sah sudah langsung diakui. _(Helpdesk Pengawas; C-0037)_
 
 ---
 
-## 3. Cek Mandiri Dinas Sebelum 3 November 2026 (Pukul 23.59 WIB)
-- [ ] Tombol "Kirim Usulan" peserta UKKJ di SIMPKB/SIMTENDIK telah diklik dan surat pengusulan resmi dinas telah diunggah.
-- [ ] Calon peserta UKPJ binaan dinas telah diingatkan untuk menuntaskan unggah berkas paling lambat 4 November 2026.
+## 3. Checklist Terakhir Dinas Sebelum Pukul 23.59 WIB Malam Ini
+- [ ] Seluruh kuota lowongan Pengawas Sekolah untuk jalur UKKJ telah terisi nama calon.
+- [ ] Seluruh kandidat UKKJ telah dipilih/dicentang di sistem.
+- [ ] Surat Usulan Resmi Dinas (PDF bertanda tangan pimpinan) telah berhasil diunggah.
+- [ ] Tombol "Kirim Usulan" telah diklik dan statusnya terkonfirmasi terkirim.

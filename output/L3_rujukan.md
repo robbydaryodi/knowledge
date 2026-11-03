@@ -1,5 +1,5 @@
 # Rujukan Lengkap & Ledger Pengetahuan: Ujikom Pengawas 2026
-_Diperbarui: 2 November 2026 · Balai Guru dan Tenaga Kependidikan Provinsi Sumatera Barat_
+_Diperbarui: 3 November 2026 · Balai Guru dan Tenaga Kependidikan Provinsi Sumatera Barat_
 
 > **Cara membaca label**
 > 🟢 **T1 Dasar hukum**: tercantum dalam dokumen resmi bernomor (rujukan di akhir baris)
@@ -21,10 +21,11 @@ _Diperbarui: 2 November 2026 · Balai Guru dan Tenaga Kependidikan Provinsi Suma
 | 5 | Notula Sosialisasi Ujikom Pengawas (26 Okt 2026) | 🔵 T4 Notula | `raw/chats/c.txt` | Tim Notulensi Kegiatan | Rujukan |
 | 6 | Flyer Linimasa UKKJ Guru Periode 2 Tahun 2026 | 🟢 T1 Pembanding | `raw/chats/WhatsApp Image 2026-10-26 at 10.52.43 AM.jpeg` | Kemendikdasmen | Rujukan |
 | 7 | Grup Koordinasi & Helpdesk Pengawas Sekolah / BCPS (27 Okt – 2 Nov 2026) | 🟡 T2 Chat | `raw/chats/chat.txt` | Helpdesk Pengawas, Rosdianica, Ceppy, Hayan | Berlaku |
+| 8 | Grup Koordinasi UJIKOM JF PS Admin BGTK/BBGTK (2 – 3 Nov 2026) | 🟡 T2 Chat | `raw/chats/e.txt` | Helpdesk Pengawas, Hijarwanto, AsepIbnu | Berlaku |
 
 ---
 
-## 2. Klaim Pengetahuan per Topik (Atomic Claims Ledger)
+## 2. Klaim Pengetahuan per Topik (Atomic Claims Ledger - 43 Klaim)
 
 ### Topik: Dasar Hukum & Skema Pelaksanaan
 - 🟢 **C-0001** `ujikom.dasar_hukum`: Uji kompetensi Jabatan Fungsional Pengawas Sekolah diselenggarakan berdasarkan PermenPANRB Nomor 7 Tahun 2026 tentang Jabatan Fungsional di Bidang Pendidik dan Pengawasan Mutu Pendidikan. _(Surat Dirjen GTK 0507/B/B.B3/GT.03.00/2026, hlm. 1; diverifikasi 26 Okt 2026)_
@@ -54,12 +55,14 @@ _Diperbarui: 2 November 2026 · Balai Guru dan Tenaga Kependidikan Provinsi Suma
 - 🟡 **C-0027** `ukpj.prioritas.pengalaman_ks`: Potensi sasaran calon peserta UKPJ yang dapat diusulkan oleh Dinas Pendidikan pada tahap awal ini diprioritaskan bagi Guru yang memiliki pengalaman manajerial sebagai Kepala Sekolah. _(Rosdianica KSPSTK, Chat Zoom 26 Okt 2026; diverifikasi 26 Okt 2026)_
 - 🟡 **C-0028** `ukpj.syarat.siasn_iiic`: Calon peserta yang dapat diusulkan Dinas Pendidikan pada sistem adalah yang sudah berstatus pangkat Penata III/c di SIASN BKN dan telah memiliki SK Kenaikan Pangkat fisik III/c. _(Rosdianica KSPSTK, Chat Zoom 26 Okt 2026; diverifikasi 26 Okt 2026)_
 - 🟡 **C-0034** `ukpj.syarat.batas_usia_bulat`: Perhitungan batas usia maksimal (52 tahun untuk Ahli Muda) bersifat mutlak dan bulat tanpa pembulatan ke atas (tidak boleh 52 tahun lebih beberapa hari/bulan pada saat pendaftaran). _(Grup WA Helpdesk Pengawas, 29 Okt 2026; diverifikasi 2 Nov 2026)_
+- 🟡 **C-0040** `ukkj.syarat.sk_jabatan_terakhir`: Untuk pengusulan peserta UKKJ Pengawas Sekolah, syarat dokumen utama yang harus dipenuhi adalah SK Kenaikan Jenjang Jabatan Fungsional Terakhir (bukan sekadar SK Kenaikan Pangkat). _(Grup WA Admin UPT, Helpdesk Pengawas, 2 Nov 2026; diverifikasi 3 Nov 2026)_
 
-### Topik: Mekanisme Khusus & Kebijakan Teknis
+### Topik: Alur Sistem, Formasi, & Dokumen
 - 🟡 **C-0032** `ukpj.penyebab_tidak_masuk_sasaran`: Terdapat 5 kriteria penyebab Guru/Kepala Sekolah tidak terjaring dalam sasaran UKPJ Pengawas 2026: perbedaan data SIASN dan Dapodik, nomenklatur jabatan di SIASN belum sesuai, jabatan KS terbaca struktural di SIASN, belum memenuhi syarat per cutoff Dapodik September 2026, atau memiliki lebih dari 1 akun PTK ID Simpkb di Dapodik. _(Rosdianica KSPSTK, Grup WA 27 Okt 2026; diverifikasi 2 Nov 2026)_
 - 🟡 **C-0033** `ukpj.mekanisme.guru_madya_ke_pengawas_muda`: Guru Ahli Madya diperbolehkan mengikuti UKPJ ke Pengawas Sekolah Ahli Muda pada formasi lowong Muda, dengan ketentuan wajib menandatangani surat pernyataan tidak menuntut diangkat ke jenjang Madya untuk pengangkatan pertamanya. _(Rosdianica KSPSTK, Grup WA 29 Okt 2026; diverifikasi 2 Nov 2026)_
 - 🟡 **C-0037** `ujikom.dokumen.legalisir_asli`: Dokumen asli seperti SKP 2 tahun terakhir dan ijazah yang diunggah dalam bentuk hasil pindai (scan) berwarna dan telah memiliki tanda tangan serta stempel basah (atau TTE sah) tidak perlu dilegalisir ulang. _(Helpdesk Pengawas, Grup WA 1 Nov 2026; diverifikasi 2 Nov 2026)_
 - 🟡 **C-0038** `ujikom.utama.syarat_unggah_penetapan_menpan`: Untuk pengusulan ke JF Pengawas Sekolah Ahli Utama, dokumen yang wajib diunggah adalah Surat Penetapan Formasi KemenPANRB, bukan surat usulan formasi dari daerah. _(Rosdianica KSPSTK, Grup WA 30 Okt 2026; diverifikasi 2 Nov 2026)_
+- 🟡 **C-0041** `ujikom.alur_dinas.pilih_kandidat_dan_unggah_surat`: Dinas Pendidikan wajib menyelesaikan dua aksi berurutan di SIMPKB agar undangan peserta terbit: (1) memilih dan menandai kandidat sasaran, serta (2) mengunggah Surat Usulan Resmi Dinas bertanda tangan pimpinan sebelum klik kirim. _(Helpdesk Pengawas, Grup WA 2 Nov 2026; diverifikasi 3 Nov 2026)_
 - 🟡 **C-0024** `ujikom.formasi.zero_sum_dinas`: Kuota usulan UKPJ dan UKKJ menggunakan formasi lowongan kebutuhan yang sama di daerah; Dinas Pendidikan yang menentukan pembagian alokasi usulan antara UKKJ dan UKPJ sesuai kuota formasi MenPANRB. _(Rosdianica & Muthi, Chat Zoom 26 Okt 2026 & Helpdesk 29 Okt 2026; diverifikasi 2 Nov 2026)_
 - 🟡 **C-0025** `ujikom.sertifikat_lama.masa_berlaku`: Masa berlaku sertifikat kelulusan uji kompetensi pengawas sebelumnya adalah 2 tahun; peserta kelulusan 2023 yang sertifikatnya kadaluwarsa pada 2025 wajib mengikuti uji kompetensi kembali di 2026. _(Muthi_KSPSTK, Chat Zoom 26 Okt 2026; diverifikasi 26 Okt 2026)_
 - 🟡 **C-0026** `ujikom.struktural.syarat_perpindahan`: Pejabat administrasi atau struktural tidak dapat langsung beralih ke JF Pengawas Sekolah, melainkan wajib kembali terlebih dahulu ke JF Guru sebelum dapat diusulkan. _(Ulfa & Muthi, Chat Zoom 26 Okt 2026; diverifikasi 26 Okt 2026)_
@@ -74,6 +77,8 @@ _Diperbarui: 2 November 2026 · Balai Guru dan Tenaga Kependidikan Provinsi Suma
 - 🔵 **C-0030** `bgtk.verval.persiapan_tim`: BGTK Provinsi Sumatera Barat harus menetapkan SK Tim Verifikator Berkas sebelum 10 November 2026 untuk memeriksa berkas usulan calon Pengawas Ahli Muda dan Ahli Madya dari 19 Kabupaten/Kota. _(Basis: C-0007, C-0019; diverifikasi 26 Okt 2026)_
 - 🔵 **C-0031** `bgtk.pendampingan.koordinasi_kuota`: Tim Pendamping Dinas BGTK Sumbar wajib segera mengingatkan 19 Dinas Pendidikan bahwa masa pengusulan UKPJ berakhir 30 Oktober 2026 dan pembagian alokasi kuota UKPJ vs UKKJ berada di tangan daerah. _(Basis: C-0003, C-0024; diverifikasi 26 Okt 2026)_
 - 🔵 **C-0039** `bgtk.verval.pengecekan_pernyataan_madya_ke_muda`: Tim Verifikator BGTK Sumbar wajib memastikan adanya unggahan surat pernyataan tidak menuntut pengangkatan jenjang Madya bagi Guru Madya yang memilih UKPJ Pengawas Ahli Muda. _(Basis: C-0033, C-0019; diverifikasi 2 Nov 2026)_
+- 🔵 **C-0042** `ujikom.verval.tidak_ada_masa_sanggah_perbaikan`: Pelaksanaan verifikasi dan validasi (verval) dokumen oleh UPT BGTK hanya berlangsung 1 (satu) kali putaran pada 10–14 November 2026 tanpa adanya masa perbaikan berkas susulan. _(Basis: C-0007, C-0008; diverifikasi 3 Nov 2026)_
+- 🔵 **C-0043** `bgtk.pendampingan.peringatan_penutupan_ukkj_hari_ini`: BGTK Provinsi Sumatera Barat wajib memberikan peringatan terakhir (final alert) kepada 19 Dinas Pendidikan bahwa masa pengusulan calon peserta UKKJ Pengawas Sekolah ditutup malam ini, 3 November 2026 pukul 23.59 WIB. _(Basis: C-0004, C-0035; diverifikasi 3 Nov 2026)_
 
 ---
 
@@ -86,14 +91,12 @@ _Diperbarui: 2 November 2026 · Balai Guru dan Tenaga Kependidikan Provinsi Suma
 | 2026-10-26 | C-0024 s.d C-0028 | Penegasan sistem kuota daerah, kadaluwarsa sertifikat, dan SIASN | T2 | Q&A Tim Pusat Dit. KSPSTK di Zoom Webinar | Berlaku |
 | 2026-10-26 | C-0029 | Penegasan status ganda pendaftar UKKJ Guru vs UKPJ PS | T2 | Q&A Tim Pusat KSPSTK (belum ada SE tertulis) | Belum-final |
 | 2026-10-26 | C-0030 s.d C-0031 | Rekomendasi pembentukan tim verval BGTK & pendampingan dinas | T4 | Penurunan logis tenggat waktu terhadap tupoksi UPT | Berlaku |
-| 2026-11-02 | C-0032 | 5 Kriteria penyebab guru tidak masuk sasaran UKPJ di sistem | T2 | Rilis Resmi Rosdianica KSPSTK di Grup WA Helpdesk | Berlaku |
-| 2026-11-02 | C-0033 | Mekanisme Guru Madya ke Pengawas Muda & syarat surat pernyataan | T2 | Arahan Teknis Rosdianica KSPSTK di Grup WA Helpdesk | Berlaku |
-| 2026-11-02 | C-0034 | Penegasan batas usia maksimal dihitung bulat tanpa toleransi hari | T2 | Penegasan Helpdesk Pengawas Pusat di Grup WA | Berlaku |
-| 2026-11-02 | C-0035 | Penutupan pengusulan UKPJ mutlak tanpa perpanjangan waktu | T2 | Penegasan Helpdesk Pengawas Pusat di Grup WA | Berlaku |
-| 2026-11-02 | C-0036 | Pembukaan pendaftaran UKPJ & pengusulan UKKJ tgl 31 Okt 19.00 WIB | T2 | Pengumuman Resmi Helpdesk Pengawas Pusat di Grup WA | Berlaku |
-| 2026-11-02 | C-0037 | Dokumen scan asli berwarna (SKP/ijazah) tidak perlu dilegalisir ulang | T2 | Penegasan Helpdesk Pengawas Pusat di Grup WA | Berlaku |
-| 2026-11-02 | C-0038 | Kewajiban unggah SK Penetapan Formasi MenPAN untuk jenjang Utama | T2 | Arahan Teknis Rosdianica KSPSTK di Grup WA Helpdesk | Berlaku |
+| 2026-11-02 | C-0032 s.d C-0038 | Rilis 5 kendala sasaran, Guru Madya ke Muda, & dispensasi legalisir | T2 | Helpdesk Pengawas & Rosdianica di WhatsApp | Berlaku |
 | 2026-11-02 | C-0039 | Pedoman verifikator BGTK Sumbar memverval surat pernyataan Madya ke Muda | T4 | Penurunan logis pelaksanaan verifikasi berkas UPT | Berlaku |
+| 2026-11-03 | C-0040 | Syarat mutlak SK Kenaikan Jenjang Jabatan Terakhir untuk UKKJ | T2 | Penegasan Helpdesk Pengawas di WhatsApp | Berlaku |
+| 2026-11-03 | C-0041 | Kewajiban pilih kandidat + unggah surat dinas agar undangan muncul | T2 | Penegasan Helpdesk Pengawas di WhatsApp | Berlaku |
+| 2026-11-03 | C-0042 | Verval UPT berlangsung 1 putaran tanpa masa perbaikan susulan | T4 | Penurunan logis jadwal linimasa resmi Dirjen | Berlaku |
+| 2026-11-03 | C-0043 | Peringatan darurat penutupan usulan UKKJ 3 November pukul 23.59 WIB | T4 | Penurunan logis tenggat waktu terhadap mitigasi daerah | Berlaku |
 
 ---
 

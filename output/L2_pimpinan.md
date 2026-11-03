@@ -1,5 +1,5 @@
 # Laporan Eksekutif untuk Pimpinan BGTK Sumbar
-_Diperbarui: 2 November 2026 · Balai Guru dan Tenaga Kependidikan Provinsi Sumatera Barat_
+_Diperbarui: 3 November 2026 · Balai Guru dan Tenaga Kependidikan Provinsi Sumatera Barat_
 
 > **Cara membaca label**
 > 🟢 **T1 Dasar hukum**: tercantum dalam dokumen resmi bernomor (rujukan di akhir baris)
@@ -10,14 +10,13 @@ _Diperbarui: 2 November 2026 · Balai Guru dan Tenaga Kependidikan Provinsi Suma
 
 ---
 
-## 1. Pembaruan Situasi Lapangan (Status per 2 November 2026)
-1. **Fase Pengusulan UKPJ Telah Ditutup (30 Okt 2026)**:
-   - Ditjen GTK secara resmi menegaskan tidak ada perpanjangan masa usul UKPJ bagi dinas yang terlambat.
-   - Pendaftar yang telah diusulkan saat ini sedang mengunggah berkas persyaratan di akun peserta masing-masing (berlangsung hingga **4 November 2026**).
-2. **Fase Pengusulan UKKJ Pengawas Sedang Berlangsung (H-1 Menuju Penutupan)**:
-   - Pengusulan UKKJ oleh 19 Dinas Pendidikan dibuka sejak 31 Oktober dan akan berakhir besok malam, **3 November 2026 pukul 23.59 WIB**.
-3. **Persiapan Verval BGTK Sumbar (10 – 14 November 2026)**:
-   - BGTK Sumbar memegang mandat verval berkas jenjang Ahli Muda dan Ahli Madya untuk 19 Kabupaten/Kota.
+## 1. Pembaruan Situasi Lapangan (Status Hari Ini, 3 November 2026)
+1. **Hari Ini: Penutupan Mutlak Pengusulan UKKJ Pengawas Sekolah (23.59 WIB)**:
+   - Tahapan pengusulan nama pengawas eksisting oleh 19 Dinas Pendidikan berakhir malam ini. Ditjen GTK telah menegaskan tidak ada toleransi perpanjangan waktu.
+2. **Besok (4 November): Batas Akhir Unggah Berkas Pendaftar UKPJ**:
+   - Pendaftar UKPJ (Guru/KS yang diusulkan dinas) memiliki sisa waktu kurang dari 36 jam untuk menuntaskan unggah dokumen sebelum sistem ditutup.
+3. **Persiapan Masa Verval UPT BGTK Sumbar (10 – 14 November 2026)**:
+   - Verval dokumen oleh UPT berlangsung **hanya 1 putaran tanpa ada jadwal perbaikan berkas susulan**. Hal ini menuntut ketelitian tim verifikator BGTK Sumbar.
 
 ---
 
@@ -25,14 +24,13 @@ _Diperbarui: 2 November 2026 · Balai Guru dan Tenaga Kependidikan Provinsi Suma
 
 | Area Risiko | Status Terkini | Dampak pada BGTK Sumbar | Tindakan Mitigasi yang Direkomendasikan |
 |---|:---:|---|---|
-| **Penutupan Pengusulan UKKJ (3 Nov besok)** | ⚡ **Kritis** | Potensi dinas kehilangan kesempatan menaikkan jenjang pengawas sekolah binaannya. | BGTK Sumbar mengirimkan *reminder* darurat via WhatsApp Helpdesk ke 19 dinas hari ini agar segera klik kirim sebelum 3 Nov 23.59 WIB. |
-| **Penyelesaian Unggah Dokumen UKPJ (4 Nov)** | ⚡ **Kritis** | Peserta yang sudah diusulkan dinas gugur otomatis bila gagal unggah dokumen sebelum 4 Nov. | Mengimbau dinas mengawal pendaftar; sosialisasi aturan bahwa scan dokumen asli bertanda tangan/stempel tidak butuh legalisir ulang. |
-| **Kesiapan Tim Verifikator UPT BGTK (10–14 Nov)** | 🟡 **Perhatian** | Beban berkas masuk dalam rentang 5 hari kerja. | Kepala Balai menetapkan SK Tim Verifikator BGTK Sumbar pada minggu ini dan mengadakan konsolidasi rubrik pemeriksaan berkas. |
-| **Disparitas Formasi & Guru Madya ke Pengawas Muda** | 🟢 **Terkendali** | Pusat telah merilis mekanisme surat pernyataan bagi Guru Madya yang mengisi formasi Pengawas Muda. | Tim Verval BGTK Sumbar memasukkan instrumen surat pernyataan ini ke dalam checklist verifikasi berkas. |
+| **Penutupan Pengusulan UKKJ Hari Ini (3 Nov)** | 🚨 **Sangat Kritis** | Daerah yang belum klik kirim malam ini akan kehilangan formasi kenaikan jenjang pengawasnya. | Kepala Balai / Katimja menginstruksikan tim pendamping melakukan *blast reminder* ke 19 dinas siang ini. |
+| **Sisa Waktu Unggah UKPJ (4 Nov Besok)** | ⚡ **Kritis** | Pendaftar yang gagal unggah berkas gugur otomatis dari seleksi administrasi. | Mengedukasi dinas dan peserta bahwa berkas asli bertanda tangan/stempel sah tidak perlu legalisir ulang. |
+| **Beban Verval Dokumen 1 Putaran (10–14 Nov)** | 🟡 **Perhatian** | Tidak ada masa sanggah/perbaikan, sehingga status TMS harus memiliki dasar juknis yang kuat dan akuntabel. | Penerbitan SK Tim Verifikator UPT BGTK Sumbar minggu ini dan briefing rubrik penilaian berkas. |
 
 ---
 
-## 3. Langkah Strategis Kepala Balai BGTK Sumbar
-1. **Penerbitan Surat Keputusan (SK) Tim Verifikator Berkas BGTK Sumbar Periode 2026**.
-2. **Instruksi Pengawalan Batas Akhir UKKJ 3 November & UKPJ 4 November** ke seluruh personil pendamping daerah di BGTK Sumbar.
-3. **Koordinasi Penetapan TUK Daerah (18–22 Nov)**: Memastikan 19 Dinas Pendidikan menyiapkan fasilitas komputer, koneksi internet, dan pengawas ruang berintegritas.
+## 3. Langkah Strategis Kepala Balai BGTK Sumbar Hari Ini
+1. **Penerbitan Surat Edaran / Peringatan Pengawalan Batas Akhir UKKJ 3 November** ke Kepala Dinas Pendidikan di 19 Kab/Kota.
+2. **Penetapan SK Tim Verifikator Berkas BGTK Sumbar Periode 2026**.
+3. **Koordinasi Persiapan Verifikasi Berkas (10–14 Nov)**: Menyiapkan instrumen checklist verifikasi untuk jenjang Pengawas Ahli Muda dan Ahli Madya.
