@@ -25,18 +25,10 @@ File utama: [`index.html`](index.html) dan data rekapitulasi: [`data.json`](data
 ---
 
 ## 🚀 Cara Mengaktifkan GitHub Pages:
-1. Buat repositori baru di akun GitHub Anda (misal: `bcps-knowledge-2026`).
-2. Masuk ke folder ini (`site/`) dan jalankan:
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: inisialisasi portal master knowledge bcps 2026"
-   git branch -M main
-   git remote add origin https://github.com/robbydaryodi/<nama-repo>.git
-   git push -u origin main
-   ```
-3. Buka tab **Settings** di GitHub > **Pages** > pilih branch `main` folder `/ (root)` > Simpan.
-4. Web akan aktif di: `https://robbydaryodi.github.io/<nama-repo>/`.
+1. Buat repositori baru di akun GitHub Anda bernama `knowledge` di https://github.com/new.
+2. Jalankan `deploy_to_github.bat` di root direktori.
+3. Buka tab **Settings** di GitHub > **Pages** > pilih Source **GitHub Actions**.
+4. Web portal akan aktif di: `https://robbydaryodi.github.io/knowledge/`.
 
 ---
 *Dikelola oleh Robby Daryodi, S.Kom. — BGTK Provinsi Sumatera Barat.*

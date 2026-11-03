@@ -7,8 +7,8 @@ echo   BGTK Provinsi Sumatera Barat - Kemendikdasmen
 echo ========================================================
 echo.
 
-set /p REPO_NAME="Masukkan nama repositori GitHub [default: bcps-knowledge-2026]: "
-if "%REPO_NAME%"=="" set REPO_NAME=bcps-knowledge-2026
+set /p REPO_NAME="Masukkan nama repositori GitHub [default: knowledge]: "
+if "%REPO_NAME%"=="" set REPO_NAME=knowledge
 
 echo.
 echo [*] Memperbarui basis data portal site/data.json...
