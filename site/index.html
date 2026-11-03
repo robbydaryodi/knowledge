@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master Knowledge Base - Ujikom Pengawas Sekolah & BCPS 2026</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Marked for Markdown Parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            bgtk: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+              800: '#0c4a6e',
+              900: '#082f49',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbars */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
+    .dark ::-webkit-scrollbar-thumb { background: #475569; }
+
+    /* Custom Markdown Prose Styling */
+    .prose-content h1 { font-size: 1.75rem; font-weight: 800; margin-bottom: 1rem; color: #0c4a6e; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+    .prose-content h2 { font-size: 1.35rem; font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #0369a1; }
+    .prose-content h3 { font-size: 1.15rem; font-weight: 600; margin-top: 1.25rem; margin-bottom: 0.5rem; color: #1e293b; }
+    .prose-content p { margin-bottom: 0.85rem; line-height: 1.7; color: #334155; }
+    .prose-content ul { list-style-type: disc; margin-left: 1.5rem; margin-bottom: 1rem; color: #334155; }
+    .prose-content ol { list-style-type: decimal; margin-left: 1.5rem; margin-bottom: 1rem; color: #334155; }
+    .prose-content li { margin-bottom: 0.35rem; }
+    .prose-content blockquote { background: #f8fafc; border-left: 4px solid #0284c7; padding: 0.75rem 1rem; margin-bottom: 1rem; border-radius: 0 0.5rem 0.5rem 0; font-size: 0.925rem; color: #475569; }
+    .prose-content table { width: 100%; border-collapse: collapse; margin-top: 1rem; margin-bottom: 1.5rem; font-size: 0.9rem; }
+    .prose-content th { background: #f1f5f9; padding: 0.65rem 0.85rem; text-align: left; font-weight: 700; border: 1px solid #cbd5e1; color: #0f172a; }
+    .prose-content td { padding: 0.65rem 0.85rem; border: 1px solid #e2e8f0; color: #334155; }
+    .prose-content tr:nth-child(even) { background-color: #f8fafc; }
+    .prose-content a { color: #0284c7; text-decoration: underline; font-weight: 500; }
+    .prose-content a:hover { color: #0369a1; }
+    .prose-content hr { margin: 1.5rem 0; border-color: #e2e8f0; }
+    .prose-content code { background-color: #f1f5f9; padding: 0.15rem 0.35rem; border-radius: 0.25rem; font-size: 0.85rem; font-family: monospace; color: #0369a1; }
+
+    /* Dark Mode Prose */
+    .dark .prose-content h1 { color: #38bdf8; border-bottom-color: #334155; }
+    .dark .prose-content h2 { color: #7dd3fc; }
+    .dark .prose-content h3 { color: #f1f5f9; }
+    .dark .prose-content p, .dark .prose-content ul, .dark .prose-content ol, .dark .prose-content td { color: #cbd5e1; }
+    .dark .prose-content blockquote { background: #1e293b; border-left-color: #38bdf8; color: #94a3b8; }
+    .dark .prose-content th { background: #1e293b; border-color: #334155; color: #f1f5f9; }
+    .dark .prose-content td { border-color: #334155; }
+    .dark .prose-content tr:nth-child(even) { background-color: #0f172a; }
+    .dark .prose-content hr { border-color: #334155; }
+    .dark .prose-content code { background-color: #1e293b; color: #38bdf8; }
+
+    /* Clickable Claim Pill */
+    .claim-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.1rem 0.4rem;
+      border-radius: 0.375rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      font-family: monospace;
+      cursor: pointer;
+      transition: all 0.15s ease-in-out;
+      background: #e0f2fe;
+      color: #0369a1;
+      border: 1px solid #bae6fd;
+    }
+    .claim-pill:hover {
+      background: #0284c7;
+      color: #ffffff;
+      border-color: #0284c7;
+      transform: translateY(-1px);
+    }
+    .dark .claim-pill {
+      background: #082f49;
+      color: #38bdf8;
+      border-color: #0369a1;
+    }
+    .dark .claim-pill:hover {
+      background: #0284c7;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 font-sans antialiased min-h-screen flex flex-col transition-colors duration-200">
+
+  <!-- Top Navbar -->
+  <header class="bg-gradient-to-r from-bgtk-900 via-bgtk-800 to-bgtk-700 text-white shadow-md sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        
+        <!-- Logo & Title -->
+        <div class="flex items-center space-x-3">
+          <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg bg-white/10 hover:bg-white/20 transition">
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+          <div class="w-10 h-10 rounded-xl bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center font-black text-amber-300 text-xl tracking-wider shadow-inner">
+            BK
+          </div>
+          <div>
+            <div class="flex items-center space-x-2">
+              <h1 class="text-base sm:text-lg font-bold tracking-tight leading-tight">Master Knowledge Base BCPS 2026</h1>
+              <span class="hidden md:inline text-[10px] bg-emerald-500/20 text-emerald-300 font-semibold px-2 py-0.5 rounded-full border border-emerald-500/30">v1.0-live</span>
+            </div>
+            <p class="text-xs text-sky-200 hidden sm:block">BGTK Provinsi Sumatera Barat • Kemendikdasmen</p>
+          </div>
+        </div>
+
+        <!-- Right Action Items -->
+        <div class="flex items-center space-x-2 sm:space-x-3">
+          
+          <!-- Search input -->
+          <div class="relative w-44 sm:w-64 md:w-72">
+            <input type="text" id="quick-search" placeholder="Cari klaim, regulasi, syarat..."
+              class="w-full bg-white/10 text-white placeholder-sky-200 text-xs sm:text-sm rounded-lg pl-8 sm:pl-9 pr-3 sm:pr-4 py-1.5 focus:outline-none focus:ring-2 focus:ring-amber-400 border border-white/20">
+            <i data-lucide="search" class="w-4 h-4 text-sky-200 absolute left-2.5 sm:left-3 top-2.5"></i>
+          </div>
+
+          <!-- Dark Mode Toggle -->
+          <button onclick="toggleDarkMode()" id="dark-mode-btn" title="Toggle Tema"
+            class="p-2 rounded-lg bg-white/10 hover:bg-white/20 text-amber-300 transition border border-white/20">
+            <i data-lucide="sun" id="dark-mode-icon" class="w-4 h-4"></i>
+          </button>
+
+          <!-- GitHub Link -->
+          <a href="https://github.com/robbydaryodi" target="_blank" title="Profil GitHub Pengembang"
+            class="flex items-center space-x-1.5 bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-lg text-xs font-semibold tracking-wide border border-white/20 transition">
+            <i data-lucide="github" class="w-4 h-4"></i>
+            <span class="hidden sm:inline">robbydaryodi</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1 flex flex-col lg:flex-row gap-6 w-full">
+    
+    <!-- Sidebar Navigation -->
+    <aside id="sidebar-nav" class="hidden lg:block w-full lg:w-72 flex-shrink-0">
+      <div class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-200/80 dark:border-slate-700/80 p-4 sticky top-24 space-y-5">
+        
+        <!-- Live Status Pill -->
+        <div class="p-3 bg-gradient-to-br from-sky-50 to-indigo-50 dark:from-slate-700/60 dark:to-slate-700/30 border border-sky-200/70 dark:border-slate-600 rounded-xl">
+          <div class="flex items-center space-x-2 text-xs font-bold text-sky-900 dark:text-sky-300 mb-1">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span>STATUS TAHAPAN SISTEM</span>
+          </div>
+          <p class="text-xs text-slate-600 dark:text-slate-300 leading-snug">
+            ⚡ <b>Pendaftaran & Unggah UKPJ</b>: s.d 4 Nov<br>
+            ⚡ <b>Pengusulan UKKJ</b>: s.d 3 Nov (Tenggat!)
+          </p>
+        </div>
+
+        <!-- Navigation Tabs: Dokumen 3 Lapis -->
+        <div>
+          <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-400 px-2 mb-2 flex items-center justify-between">
+            <span>Dokumen 3 Lapis</span>
+            <span class="text-[10px] font-normal text-slate-400">Anti-Halusinasi</span>
+          </div>
+          <nav class="space-y-1" id="nav-docs">
+            <button onclick="switchTab('L1_peta.md')" data-doc="L1_peta.md"
+              class="nav-btn w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700/50 transition text-left">
+              <span class="flex items-center space-x-2.5">
+                <i data-lucide="map" class="w-4 h-4 text-sky-600 dark:text-sky-400"></i>
+                <span>Lapis 1: Peta Singkat</span>
+              </span>
+              <span class="text-[10px] bg-sky-100 dark:bg-sky-900/60 text-sky-800 dark:text-sky-300 font-bold px-1.5 py-0.5 rounded">T1/T2</span>
+            </button>
+
+            <button onclick="switchTab('L2_verifikator.md')" data-doc="L2_verifikator.md"
+              class="nav-btn w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700/50 transition text-left">
+              <span class="flex items-center space-x-2.5">
+                <i data-lucide="check-square" class="w-4 h-4 text-emerald-600 dark:text-emerald-400"></i>
+                <span>L2: Tim Verifikator</span>
+              </span>
+              <span class="text-[10px] bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 font-semibold px-1.5 py-0.5 rounded">BGTK</span>
+            </button>
+
+            <button onclick="switchTab('L2_pendamping-dinas.md')" data-doc="L2_pendamping-dinas.md"
+              class="nav-btn w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700/50 transition text-left">
+              <span class="flex items-center space-x-2.5">
+                <i data-lucide="building" class="w-4 h-4 text-indigo-600 dark:text-indigo-400"></i>
+                <span>L2: Pendamping Dinas</span>
+              </span>
+              <span class="text-[10px] bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 font-semibold px-1.5 py-0.5 rounded">19 Kab/Ko</span>
+            </button>
+
+            <button onclick="switchTab('L2_pimpinan.md')" data-doc="L2_pimpinan.md"
+              class="nav-btn w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700/50 transition text-left">
+              <span class="flex items-center space-x-2.5">
+                <i data-lucide="shield" class="w-4 h-4 text-amber-600 dark:text-amber-400"></i>
+                <span>L2: Laporan Pimpinan</span>
+              </span>
+              <span class="text-[10px] bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 font-semibold px-1.5 py-0.5 rounded">Eksekutif</span>
+            </button>
+
+            <button onclick="switchTab('L3_rujukan.md')" data-doc="L3_rujukan.md"
+              class="nav-btn w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700/50 transition text-left">
+              <span class="flex items-center space-x-2.5">
+                <i data-lucide="book-open" class="w-4 h-4 text-rose-600 dark:text-rose-400"></i>
+                <span>L3: Rujukan & Ledger</span>
+              </span>
+              <span class="text-[10px] bg-rose-100 dark:bg-rose-950/60 text-rose-800 dark:text-rose-300 font-bold px-1.5 py-0.5 rounded">39 Klaim</span>
+            </button>
+          </nav>
+        </div>
+
+        <!-- Audit & Interactive Tools -->
+        <div>
+          <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-400 px-2 mb-2">Audit & Interaktif</div>
+          <nav class="space-y-1">
+            <button onclick="switchTab('claims_interactive')" data-doc="claims_interactive"
+              class="nav-btn w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700/50 transition text-left">
+              <span class="flex items-center space-x-2.5">
+                <i data-lucide="database" class="w-4 h-4 text-teal-600 dark:text-teal-400"></i>
+                <span>Ledger Explorer (T1-T4)</span>
+              </span>
+              <span class="text-[10px] bg-teal-100 dark:bg-teal-950/60 text-teal-800 dark:text-teal-300 font-bold px-1.5 py-0.5 rounded">Tabel Interaktif</span>
+            </button>
+
+            <button onclick="switchTab('review_queue.md')" data-doc="review_queue.md"
+              class="nav-btn w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700/50 transition text-left">
+              <span class="flex items-center space-x-2.5">
+                <i data-lucide="alert-circle" class="w-4 h-4 text-amber-500"></i>
+                <span>Antrean Tinjauan</span>
+              </span>
+              <span class="text-[10px] bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 font-bold px-1.5 py-0.5 rounded">Queue</span>
+            </button>
+
+            <button onclick="switchTab('CHANGELOG.md')" data-doc="CHANGELOG.md"
+              class="nav-btn w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700/50 transition text-left">
+              <span class="flex items-center space-x-2.5">
+                <i data-lucide="history" class="w-4 h-4 text-slate-500 dark:text-slate-400"></i>
+                <span>Log Riwayat (Changelog)</span>
+              </span>
+            </button>
+          </nav>
+        </div>
+
+        <!-- Provenance Badge Legend -->
+        <div class="pt-4 border-t border-slate-100 dark:border-slate-700 text-xs space-y-1.5 text-slate-500 dark:text-slate-400">
+          <div class="font-bold text-slate-700 dark:text-slate-300 text-[11px] mb-1">PROVENANCE TIERS:</div>
+          <div class="flex items-center space-x-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+            <span><b>T1</b>: Dasar Hukum / Regulasi</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+            <span><b>T2</b>: Penegasan PIC Pusat</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-orange-400"></span>
+            <span><b>T3</b>: Masukan Daerah / UPT</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+            <span><b>T4</b>: Inferensi Analis BGTK</span>
+          </div>
+        </div>
+
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-200/80 dark:border-slate-700/80 p-5 sm:p-8 min-w-0 transition-colors">
+      
+      <!-- Top Action Bar -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 mb-6 border-b border-slate-200 dark:border-slate-700 gap-3">
+        <div id="content-header">
+          <span id="doc-badge" class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-sky-100 dark:bg-sky-900/60 text-sky-800 dark:text-sky-300 mb-1">
+            Lapis 1 Peta
+          </span>
+          <h2 id="doc-title" class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight">Memuat Data...</h2>
+        </div>
+
+        <div class="flex items-center space-x-2 self-end sm:self-auto">
+          <button onclick="copyDocumentMarkdown()" id="btn-copy-doc" class="px-3 py-1.5 text-xs font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 rounded-lg flex items-center space-x-1.5 transition" title="Salin Konten Markdown">
+            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+            <span>Salin MD</span>
+          </button>
+          <button onclick="window.print()" class="px-3 py-1.5 text-xs font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 rounded-lg flex items-center space-x-1.5 transition" title="Cetak / Simpan PDF">
+            <i data-lucide="printer" class="w-3.5 h-3.5"></i>
+            <span>Cetak PDF</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Rendered Markdown Container -->
+      <div id="markdown-container" class="prose-content">
+        <!-- Injected by JS -->
+      </div>
+
+      <!-- Interactive Claims Ledger View (Hidden by default) -->
+      <div id="claims-container" class="hidden space-y-4">
+        
+        <!-- Filters Toolbar -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 bg-slate-50 dark:bg-slate-700/50 p-4 rounded-xl border border-slate-200 dark:border-slate-600">
+          <div>
+            <label class="block text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase mb-1">Filter Tier:</label>
+            <select id="tier-filter" onchange="filterClaims()" class="w-full text-xs bg-white dark:bg-slate-800 dark:text-slate-100 border border-slate-300 dark:border-slate-600 rounded-lg px-2.5 py-1.5 font-medium focus:ring-2 focus:ring-sky-500">
+              <option value="ALL">Semua Tier (T1 - T4)</option>
+              <option value="T1">🟢 T1 (Dasar Hukum)</option>
+              <option value="T2">🟡 T2 (Arahan Pusat)</option>
+              <option value="T4">🔵 T4 (Inferensi BGTK)</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase mb-1">Filter Lapis:</label>
+            <select id="layer-filter" onchange="filterClaims()" class="w-full text-xs bg-white dark:bg-slate-800 dark:text-slate-100 border border-slate-300 dark:border-slate-600 rounded-lg px-2.5 py-1.5 font-medium focus:ring-2 focus:ring-sky-500">
+              <option value="ALL">Semua Lapis (1, 2, 3)</option>
+              <option value="1">Lapis 1 (Peta Ringkas)</option>
+              <option value="2">Lapis 2 (Panduan Peran)</option>
+              <option value="3">Lapis 3 (Rujukan Induk)</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase mb-1">Filter Topik:</label>
+            <select id="topic-filter" onchange="filterClaims()" class="w-full text-xs bg-white dark:bg-slate-800 dark:text-slate-100 border border-slate-300 dark:border-slate-600 rounded-lg px-2.5 py-1.5 font-medium focus:ring-2 focus:ring-sky-500">
+              <option value="ALL">Semua Topik</option>
+              <!-- Populated dynamically -->
+            </select>
+          </div>
+
+          <div class="flex items-end justify-between sm:justify-end gap-2">
+            <button onclick="exportClaimsToCSV()" class="w-full py-1.5 px-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs rounded-lg flex items-center justify-center space-x-1.5 shadow-sm transition">
+              <i data-lucide="download" class="w-3.5 h-3.5"></i>
+              <span>Ekspor CSV</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Count & Status Info -->
+        <div class="flex items-center justify-between text-xs px-1 text-slate-500 dark:text-slate-400 font-medium">
+          <span id="claims-count-badge">Menampilkan 39 klaim</span>
+          <span class="text-[11px]">Klik ID klaim untuk melihat rujukan lengkap</span>
+        </div>
+
+        <!-- Claims Table -->
+        <div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
+          <table class="w-full text-left text-xs text-slate-600 dark:text-slate-300" id="claims-table">
+            <thead class="bg-slate-100 dark:bg-slate-700/80 text-slate-800 dark:text-slate-200 uppercase font-bold text-[11px] tracking-wider border-b border-slate-200 dark:border-slate-700">
+              <tr>
+                <th class="p-3 w-20">ID</th>
+                <th class="p-3 w-16 text-center">Tier</th>
+                <th class="p-3 w-36">Topik</th>
+                <th class="p-3">Pernyataan Kebijakan (Klaim Atomik)</th>
+                <th class="p-3 w-44">Rujukan Sumber</th>
+                <th class="p-3 w-20 text-center">Aksi</th>
+              </tr>
+            </thead>
+            <tbody id="claims-tbody" class="divide-y divide-slate-200 dark:divide-slate-700 bg-white dark:bg-slate-800">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Claim Detail Modal -->
+  <div id="claim-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white dark:bg-slate-800 rounded-2xl max-w-xl w-full p-6 shadow-2xl border border-slate-200 dark:border-slate-700 space-y-4 animate-in fade-in zoom-in-95 duration-150">
+      <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-3">
+        <div class="flex items-center space-x-2">
+          <span id="modal-tier-badge" class="px-2 py-0.5 rounded text-xs font-bold">T1</span>
+          <h3 id="modal-claim-id" class="text-base font-bold font-mono text-slate-900 dark:text-white">C-0001</h3>
+        </div>
+        <button onclick="closeClaimModal()" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="space-y-3 text-xs sm:text-sm">
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Topik</span>
+          <div id="modal-claim-topic" class="font-mono text-sky-700 dark:text-sky-400 font-semibold mt-0.5"></div>
+        </div>
+
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Pernyataan Resmi</span>
+          <p id="modal-claim-statement" class="text-slate-800 dark:text-slate-200 font-medium leading-relaxed mt-1 p-3 bg-slate-50 dark:bg-slate-700/50 rounded-lg border border-slate-200 dark:border-slate-600"></p>
+        </div>
+
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Dasar Rujukan Sumber</span>
+          <p id="modal-claim-ref" class="text-slate-600 dark:text-slate-300 mt-1 italic"></p>
+        </div>
+
+        <div id="modal-claim-note-box" class="hidden">
+          <span class="text-[11px] font-bold uppercase tracking-wider text-amber-500">Catatan Analis BGTK</span>
+          <p id="modal-claim-note" class="text-amber-800 dark:text-amber-300 mt-1 bg-amber-50 dark:bg-amber-950/40 p-2 rounded border border-amber-200 dark:border-amber-800"></p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-100 dark:border-slate-700 text-xs text-slate-500">
+          <div>Status: <span id="modal-claim-status" class="font-bold text-slate-700 dark:text-slate-300"></span></div>
+          <div>Lapis: <span id="modal-claim-layer" class="font-bold text-slate-700 dark:text-slate-300"></span></div>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-end space-x-2 pt-3 border-t border-slate-200 dark:border-slate-700">
+        <button id="modal-copy-btn" onclick="copyCurrentModalClaim()" class="px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white rounded-lg text-xs font-semibold flex items-center space-x-1.5 transition">
+          <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+          <span>Salin Format WhatsApp</span>
+        </button>
+        <button onclick="closeClaimModal()" class="px-4 py-2 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-300 rounded-lg text-xs font-semibold transition">
+          Tutup
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-6 right-6 bg-slate-900 text-white px-4 py-2.5 rounded-xl shadow-xl text-xs font-medium flex items-center space-x-2 opacity-0 pointer-events-none transition-all duration-300 z-50">
+    <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+    <span id="toast-message">Pesan notifikasi</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 py-6 mt-12 text-center text-xs text-slate-500 dark:text-slate-400 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 space-y-1">
+      <p class="font-bold text-slate-700 dark:text-slate-200">Balai Guru dan Tenaga Kependidikan (BGTK) Provinsi Sumatera Barat</p>
+      <p>Kementerian Pendidikan Dasar dan Menengah • Tim Pengembang Sistem Informasi & Data</p>
+      <p class="text-[11px] text-slate-400 dark:text-slate-500">Dikelola oleh Robby Daryodi, S.Kom. (robby.daryodi@gmail.com)</p>
+    </div>
+  </footer>
+
+  <!-- Application Logic -->
+  <script>
+    let rawData = null;
+    let currentDoc = 'L1_peta.md';
+    let currentModalClaimObj = null;
+
+    // Dark Mode Handling
+    function initDarkMode() {
+      const isDark = localStorage.getItem('bcps_dark') === 'true' || 
+        (!('bcps_dark' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      if (isDark) {
+        document.documentElement.classList.add('dark');
+        document.getElementById('dark-mode-icon').setAttribute('data-lucide', 'moon');
+      } else {
+        document.documentElement.classList.remove('dark');
+        document.getElementById('dark-mode-icon').setAttribute('data-lucide', 'sun');
+      }
+    }
+
+    function toggleDarkMode() {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('bcps_dark', isDark);
+      document.getElementById('dark-mode-icon').setAttribute('data-lucide', isDark ? 'moon' : 'sun');
+      lucide.createIcons();
+    }
+
+    function toggleMobileMenu() {
+      const sidebar = document.getElementById('sidebar-nav');
+      sidebar.classList.toggle('hidden');
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toast-message').innerText = msg;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 2500);
+    }
+
+    async function loadData() {
+      try {
+        const res = await fetch('data.json');
+        rawData = await res.json();
+        populateTopicFilter();
+        renderNav();
+        
+        // Check hash or default to L1_peta.md
+        const hash = window.location.hash.replace('#', '');
+        if (hash && hash.startsWith('claim=')) {
+          const claimId = hash.replace('claim=', '');
+          switchTab('claims_interactive');
+          openClaimModal(claimId);
+        } else if (hash && rawData.docs[hash]) {
+          switchTab(hash);
+        } else {
+          switchTab('L1_peta.md');
+        }
+      } catch (err) {
+        document.getElementById('markdown-container').innerHTML = `
+          <div class="p-4 bg-red-50 text-red-800 rounded-lg border border-red-200">
+            <b>Gagal memuat data.json:</b> ${err.message}. Pastikan file data.json berada di folder yang sama.
+          </div>
+        `;
+      }
+    }
+
+    function populateTopicFilter() {
+      if (!rawData || !rawData.claims) return;
+      const topics = Array.from(new Set(rawData.claims.map(c => c.topic))).sort();
+      const sel = document.getElementById('topic-filter');
+      sel.innerHTML = '<option value="ALL">Semua Topik (' + topics.length + ')</option>';
+      topics.forEach(t => {
+        const opt = document.createElement('option');
+        opt.value = t;
+        opt.innerText = t;
+        sel.appendChild(opt);
+      });
+    }
+
+    function renderNav() {
+      lucide.createIcons();
+    }
+
+    function switchTab(docKey) {
+      currentDoc = docKey;
+      
+      // Close mobile menu if open
+      if (window.innerWidth < 1024) {
+        document.getElementById('sidebar-nav').classList.add('hidden');
+      }
+
+      // Update Active Navigation Button Styling
+      document.querySelectorAll('.nav-btn').forEach(btn => {
+        if (btn.getAttribute('data-doc') === docKey) {
+          btn.classList.add('bg-sky-50', 'dark:bg-slate-700', 'text-sky-900', 'dark:text-sky-300', 'font-bold', 'border-l-4', 'border-sky-600');
+          btn.classList.remove('text-slate-700', 'dark:text-slate-300');
+        } else {
+          btn.classList.remove('bg-sky-50', 'dark:bg-slate-700', 'text-sky-900', 'dark:text-sky-300', 'font-bold', 'border-l-4', 'border-sky-600');
+          btn.classList.add('text-slate-700', 'dark:text-slate-300');
+        }
+      });
+
+      const mdContainer = document.getElementById('markdown-container');
+      const claimsContainer = document.getElementById('claims-container');
+      const badge = document.getElementById('doc-badge');
+      const title = document.getElementById('doc-title');
+      const btnCopy = document.getElementById('btn-copy-doc');
+
+      if (docKey === 'claims_interactive') {
+        mdContainer.classList.add('hidden');
+        claimsContainer.classList.remove('hidden');
+        badge.className = 'inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-teal-100 dark:bg-teal-950/70 text-teal-800 dark:text-teal-300 mb-1';
+        badge.innerText = 'Interactive Ledger';
+        title.innerText = 'Eksplorasi Klaim Atomik (T1 s.d T4)';
+        btnCopy.classList.add('hidden');
+        renderClaimsTable();
+        return;
+      }
+
+      btnCopy.classList.remove('hidden');
+      mdContainer.classList.remove('hidden');
+      claimsContainer.classList.add('hidden');
+
+      if (docKey.includes('L1')) {
+        badge.className = 'inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-sky-100 dark:bg-sky-950/70 text-sky-800 dark:text-sky-300 mb-1';
+        badge.innerText = 'Lapis 1 • Eksekutif';
+        title.innerText = 'Peta Singkat Program BCPS 2026';
+      } else if (docKey.includes('L2_verifikator')) {
+        badge.className = 'inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 dark:bg-emerald-950/70 text-emerald-800 dark:text-emerald-300 mb-1';
+        badge.innerText = 'Lapis 2 • Tim Verifikator';
+        title.innerText = 'Panduan Tim Verifikasi Berkas UPT';
+      } else if (docKey.includes('L2_pendamping')) {
+        badge.className = 'inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-100 dark:bg-indigo-950/70 text-indigo-800 dark:text-indigo-300 mb-1';
+        badge.innerText = 'Lapis 2 • 19 Kab/Kota';
+        title.innerText = 'Panduan Pendampingan Dinas Pendidikan';
+      } else if (docKey.includes('L2_pimpinan')) {
+        badge.className = 'inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-100 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 mb-1';
+        badge.innerText = 'Lapis 2 • Manajemen';
+        title.innerText = 'Laporan Eksekutif untuk Pimpinan';
+      } else if (docKey.includes('L3')) {
+        badge.className = 'inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-rose-100 dark:bg-rose-950/70 text-rose-800 dark:text-rose-300 mb-1';
+        badge.innerText = 'Lapis 3 • Rujukan Induk';
+        title.innerText = 'Rujukan Lengkap & Ledger Pengetahuan';
+      } else if (docKey.includes('review_queue')) {
+        badge.className = 'inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-100 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 mb-1';
+        badge.innerText = 'Audit • Review Queue';
+        title.innerText = 'Antrean Tinjauan Manusia';
+      } else {
+        badge.className = 'inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-300 mb-1';
+        badge.innerText = 'Audit Log';
+        title.innerText = 'Riwayat Perubahan (CHANGELOG)';
+      }
+
+      let content = rawData.docs[docKey] || '# Konten belum tersedia';
+      
+      // Render markdown using Marked
+      let html = marked.parse(content);
+
+      // Enhance rendered HTML: auto-link claim IDs like C-0001
+      html = html.replace(/\b(C-\d{4})\b/g, (match) => {
+        return `<span class="claim-pill" onclick="openClaimModal('${match}')"><i data-lucide="tag" class="w-3 h-3"></i>${match}</span>`;
+      });
+
+      mdContainer.innerHTML = html;
+      lucide.createIcons();
+    }
+
+    function renderClaimsTable() {
+      const tbody = document.getElementById('claims-tbody');
+      const tierFilter = document.getElementById('tier-filter').value;
+      const layerFilter = document.getElementById('layer-filter').value;
+      const topicFilter = document.getElementById('topic-filter').value;
+      const search = (document.getElementById('quick-search').value || '').toLowerCase();
+
+      let filtered = rawData.claims.filter(c => {
+        if (tierFilter !== 'ALL' && c.tier !== tierFilter) return false;
+        if (layerFilter !== 'ALL' && String(c.layer) !== layerFilter) return false;
+        if (topicFilter !== 'ALL' && c.topic !== topicFilter) return false;
+        if (search) {
+          const matchStmt = c.statement.toLowerCase().includes(search);
+          const matchTopic = c.topic.toLowerCase().includes(search);
+          const matchId = c.id.toLowerCase().includes(search);
+          return matchStmt || matchTopic || matchId;
+        }
+        return true;
+      });
+
+      document.getElementById('claims-count-badge').innerText = `Menampilkan ${filtered.length} dari ${rawData.claims.length} klaim`;
+
+      tbody.innerHTML = filtered.map(c => {
+        let badgeColor = 'bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-300';
+        if (c.tier === 'T1') badgeColor = 'bg-emerald-100 dark:bg-emerald-950/70 text-emerald-800 dark:text-emerald-300 font-bold border border-emerald-300 dark:border-emerald-700';
+        if (c.tier === 'T2') badgeColor = 'bg-amber-100 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 font-bold border border-amber-300 dark:border-amber-700';
+        if (c.tier === 'T3') badgeColor = 'bg-orange-100 dark:bg-orange-950/70 text-orange-800 dark:text-orange-300 font-bold border border-orange-300 dark:border-orange-700';
+        if (c.tier === 'T4') badgeColor = 'bg-sky-100 dark:bg-sky-950/70 text-sky-800 dark:text-sky-300 font-bold border border-sky-300 dark:border-sky-700';
+
+        const refText = c.source ? (c.source.ref || c.source.file || '-') : '-';
+
+        return `
+          <tr class="hover:bg-slate-50 dark:hover:bg-slate-700/40 transition">
+            <td class="p-3 font-mono font-bold">
+              <button onclick="openClaimModal('${c.id}')" class="text-sky-600 dark:text-sky-400 hover:underline flex items-center space-x-1">
+                <span>${c.id}</span>
+              </button>
+            </td>
+            <td class="p-3 text-center"><span class="px-2 py-0.5 rounded text-[10px] ${badgeColor}">${c.tier}</span></td>
+            <td class="p-3 font-medium text-slate-800 dark:text-slate-200"><code>${c.topic}</code></td>
+            <td class="p-3 text-slate-700 dark:text-slate-300 leading-relaxed font-normal">${c.statement}</td>
+            <td class="p-3 text-[11px] text-slate-500 dark:text-slate-400">${refText}</td>
+            <td class="p-3 text-center">
+              <button onclick="copySingleClaim('${c.id}')" title="Salin Pernyataan" class="p-1.5 rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-sky-100 dark:hover:bg-sky-900/60 text-slate-600 dark:text-slate-300 hover:text-sky-600 transition">
+                <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+              </button>
+            </td>
+          </tr>
+        `;
+      }).join('');
+
+      lucide.createIcons();
+    }
+
+    function filterClaims() {
+      renderClaimsTable();
+    }
+
+    function openClaimModal(claimId) {
+      if (!rawData || !rawData.claims) return;
+      const c = rawData.claims.find(item => item.id === claimId);
+      if (!c) return;
+      currentModalClaimObj = c;
+
+      document.getElementById('modal-claim-id').innerText = c.id;
+      document.getElementById('modal-claim-topic').innerText = c.topic;
+      document.getElementById('modal-claim-statement').innerText = c.statement;
+      
+      const refText = c.source ? (c.source.ref || c.source.file || '-') : '-';
+      document.getElementById('modal-claim-ref').innerText = refText;
+
+      const badge = document.getElementById('modal-tier-badge');
+      badge.innerText = `${c.tier} (${getTierName(c.tier)})`;
+      badge.className = 'px-2 py-0.5 rounded text-xs font-bold ' + getTierBadgeClass(c.tier);
+
+      document.getElementById('modal-claim-status').innerText = c.status || 'berlaku';
+      document.getElementById('modal-claim-layer').innerText = `Lapis ${c.layer || 1}`;
+
+      const noteBox = document.getElementById('modal-claim-note-box');
+      if (c.note && c.note.trim()) {
+        noteBox.classList.remove('hidden');
+        document.getElementById('modal-claim-note').innerText = c.note;
+      } else {
+        noteBox.classList.add('hidden');
+      }
+
+      document.getElementById('claim-modal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeClaimModal() {
+      document.getElementById('claim-modal').classList.add('hidden');
+      currentModalClaimObj = null;
+    }
+
+    function getTierName(tier) {
+      switch(tier) {
+        case 'T1': return 'Dasar Hukum';
+        case 'T2': return 'Penegasan Pusat';
+        case 'T3': return 'Daerah / UPT';
+        case 'T4': return 'Inferensi Analis BGTK';
+        default: return tier;
+      }
+    }
+
+    function getTierBadgeClass(tier) {
+      switch(tier) {
+        case 'T1': return 'bg-emerald-100 text-emerald-800';
+        case 'T2': return 'bg-amber-100 text-amber-800';
+        case 'T3': return 'bg-orange-100 text-orange-800';
+        case 'T4': return 'bg-sky-100 text-sky-800';
+        default: return 'bg-slate-100 text-slate-800';
+      }
+    }
+
+    function formatClaimText(c) {
+      const refText = c.source ? (c.source.ref || c.source.file || '-') : '-';
+      return `📌 [${c.id}] (Tier ${c.tier} - ${getTierName(c.tier)})\n` +
+             `Topik: ${c.topic}\n` +
+             `Kebijakan: ${c.statement}\n` +
+             `Rujukan: ${refText}\n` +
+             `Status: ${c.status || 'berlaku'} | Master Knowledge BCPS 2026 BGTK Sumbar`;
+    }
+
+    function copySingleClaim(claimId) {
+      const c = rawData.claims.find(item => item.id === claimId);
+      if (!c) return;
+      navigator.clipboard.writeText(formatClaimText(c)).then(() => {
+        showToast(`Klaim ${c.id} berhasil disalin!`);
+      });
+    }
+
+    function copyCurrentModalClaim() {
+      if (!currentModalClaimObj) return;
+      navigator.clipboard.writeText(formatClaimText(currentModalClaimObj)).then(() => {
+        showToast(`Klaim ${currentModalClaimObj.id} disalin ke clipboard!`);
+      });
+    }
+
+    function copyDocumentMarkdown() {
+      if (!rawData || !rawData.docs || !rawData.docs[currentDoc]) return;
+      navigator.clipboard.writeText(rawData.docs[currentDoc]).then(() => {
+        showToast(`Dokumen ${currentDoc} disalin dalam format Markdown!`);
+      });
+    }
+
+    function exportClaimsToCSV() {
+      if (!rawData || !rawData.claims) return;
+      const tierFilter = document.getElementById('tier-filter').value;
+      const layerFilter = document.getElementById('layer-filter').value;
+      const topicFilter = document.getElementById('topic-filter').value;
+
+      let filtered = rawData.claims.filter(c => {
+        if (tierFilter !== 'ALL' && c.tier !== tierFilter) return false;
+        if (layerFilter !== 'ALL' && String(c.layer) !== layerFilter) return false;
+        if (topicFilter !== 'ALL' && c.topic !== topicFilter) return false;
+        return true;
+      });
+
+      let csv = 'ID,Tier,Status,Layer,Topic,Statement,Source_Ref,Roles\n';
+      filtered.forEach(c => {
+        const refText = c.source ? (c.source.ref || c.source.file || '') : '';
+        const roles = (c.roles || []).join(';');
+        const cleanStmt = `"${(c.statement || '').replace(/"/g, '""')}"`;
+        const cleanRef = `"${refText.replace(/"/g, '""')}"`;
+        csv += `${c.id},${c.tier},${c.status || 'berlaku'},${c.layer || 1},${c.topic},${cleanStmt},${cleanRef},"${roles}"\n`;
+      });
+
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.setAttribute('href', url);
+      link.setAttribute('download', `claims_bcps_2026_${new Date().toISOString().slice(0,10)}.csv`);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      showToast(`Berhasil mengekspor ${filtered.length} klaim ke CSV!`);
+    }
+
+    document.getElementById('quick-search').addEventListener('input', (e) => {
+      if (currentDoc === 'claims_interactive') {
+        renderClaimsTable();
+      } else {
+        const query = e.target.value.toLowerCase();
+        if (query.length > 2) {
+          switchTab('claims_interactive');
+        }
+      }
+    });
+
+    // Close modal on escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeClaimModal();
+    });
+
+    // Start loading on page ready
+    window.addEventListener('DOMContentLoaded', () => {
+      initDarkMode();
+      loadData();
+    });
+  </script>
+</body>
+</html>
